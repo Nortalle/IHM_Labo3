@@ -1,0 +1,40 @@
+#:kivy 1.10.1
+
+<GUI>:                                  # Main GUI
+    StackLayout:
+        ActionBar:
+            pos_hint: {'top':1}
+            ActionView:
+                use_separator: True
+                ActionPrevious:
+                    title: ''
+                    size_hint: None, None
+                    size: 0, 0
+                ActionOverflow:
+                ActionGroup:
+                    text: 'File'
+                    ActionButton:
+                        text: 'New'
+                    ActionButton:
+                        text: 'Open'
+                    ActionButton:
+                        text: 'Save'
+                    ActionButton:
+                        text: 'Save as'
+                    ActionButton:
+                        text: 'Exit'
+                ActionGroup:
+                    text: 'Edit'
+                    ActionButton:
+                        text: 'Copy'
+                    ActionButton:
+                        text: 'Cut'
+                    ActionButton:
+                        text: 'Paste'
+                ActionGroup:
+                    text: 'Help'
+                    ActionButton:
+                        text: 'Help'
+                    ActionButton:
+                        text: 'About'
+
